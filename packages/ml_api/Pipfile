@@ -1,0 +1,15 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[packages]
+gunicorn = "*"
+flask = "*"
+SQLAlchemy ="*"
+marshmallow="*"
+pdoc3 = "*"
+pylint = "*"
+
+[requires]
+python_version = "3.8.5"
