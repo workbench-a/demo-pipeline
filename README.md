@@ -1,4 +1,4 @@
-# Demo-Pipeline
+# MLOps Demo
 
 This is a machine learning pipeline demo
 
