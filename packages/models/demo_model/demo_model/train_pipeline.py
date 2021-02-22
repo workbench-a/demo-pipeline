@@ -20,6 +20,7 @@ def run_training() -> None:
     y_train = half_scale(target=y_train)
     pipeline.reg_demo_pipe.fit(X_train[config.FEATURES], y_train)
     
+    # persist and log
     _logger.info(f"saving model version: {_version}")
     save_pipeline(pipeline_to_persist=pipeline.reg_demo_pipe)
     

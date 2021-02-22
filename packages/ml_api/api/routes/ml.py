@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from api.controllers.ml import get_health, get_version, classify_text
+from api.controllers.ml import get_health, get_version, classify_text, predict
 
 ml = Blueprint('ml', __name__)
 
@@ -21,4 +21,4 @@ def demo_classify_text():
 @ml.route('/v0/predict/regression', methods=['GET', 'POST'])
 def demo_predict():
   """"""
-  return make_single_prediction()
+  return predict()

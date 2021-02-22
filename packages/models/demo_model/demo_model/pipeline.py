@@ -6,7 +6,7 @@ from demo_model.config import config
 
 import logging
 
-# ?? why is this even here?
+# *check logger
 _logger = logging.getLogger(__name__)
 
 reg_demo_pipe = Pipeline(
