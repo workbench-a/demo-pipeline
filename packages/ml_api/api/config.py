@@ -16,6 +16,10 @@ DATABASE_USER = os.environ.get('DATABASE_USER')
 DATABASE_PASSWORD = os.environ.get('DATABASE_PASSWORD')
 DATABASE_ADDRESS = os.environ.get('DATABASE_ADDRESS')
 
+# For developing models locally
+MODEL_DEVELOPMENT = True
+MODEL_PATHS = [os.environ.get('DEMO_MODEL_PATH')]
+
 # Flask app config
 
 class Config:

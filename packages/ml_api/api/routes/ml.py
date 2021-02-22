@@ -17,3 +17,8 @@ def version():
 def demo_classify_text():
   """"""
   return classify_text(request)
+
+@ml.route('/v0/predict/regression', methods=['GET', 'POST'])
+def demo_predict():
+  """"""
+  return make_single_prediction()

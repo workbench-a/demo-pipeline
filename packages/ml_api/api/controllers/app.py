@@ -1,5 +1,5 @@
 from flask import jsonify
-from ml_demo import __version__ as _version
+# from ml_demo import __version__ as _version
 from api import __version__ as api_version
 
 def get_health():

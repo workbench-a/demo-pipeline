@@ -2,3 +2,5 @@
 *.pyo
 *.env
 sandbox/
+api_sandbox/
+data_sandbox/
