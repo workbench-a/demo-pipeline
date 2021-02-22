@@ -16,6 +16,21 @@ DATABASE_USER = os.environ.get('DATABASE_USER')
 DATABASE_PASSWORD = os.environ.get('DATABASE_PASSWORD')
 DATABASE_ADDRESS = os.environ.get('DATABASE_ADDRESS')
 
+# # Make Database URI
+# def make_uri(db_engine='SQLITE', db_name='temp_db', db_user='', db_password='', db_address=''):
+#   """"""
+#   uri_string = {
+#     'SQLITE': f'sqlite:///{db_name}',
+#     'POSGRESQL': f'postgresql+psychopg2://{db_user}:{db_password}@{db_address}/{db_name}',
+#     'MYSQL': f"mysql+pymysql://{db_user}:{db_password}@{db_address}/{db_name}",
+#   }
+#   if db_engine == 'SQLITE':
+#     return uri_string[db_engine].format(db_name)
+#   elif db_engine == 'POSGRESQL':
+#     return uri_string[db_engine].format(db_user, db_password, db_address, db_name)
+#   elif db_engine == 'MYSQL':
+#     return uri_string[db_engine].format(db_user, db_password, db_address, db_name)
+
 # Flask app config
 
 class Config:
@@ -28,6 +43,7 @@ class DevelopmentConfig(Config):
   DEBUG = True
 
 class ProductionConfig(Config):
+  # SQLALCHEMY_DATABASE_URI = make_uri(DATABASE_ENGINE, DATABASE_PATH, DATABASE_USER, DATABASE_PASSWORD, DATABASE_ADDRESS)
   SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URI')
   DEBUG = False
   SERVER_ADDRESS: os.environ.get('SERVER_ADDRESS', '0.0.0.0')
