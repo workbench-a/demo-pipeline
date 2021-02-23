@@ -1,7 +1,7 @@
 # MLOps Lifecycle Demo
 
----
-# Developing, Deploying, and Monitoring Machine Learning Models for Web Applications and Practical Business Use Cases
+## Developing Machine Learning Models for Practical Web Applications
+--
 
 **Notes:** Given the relatively large scope of the project please consider the following:
 1. This project is under active development
