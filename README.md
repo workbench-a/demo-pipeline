@@ -50,17 +50,17 @@
 * This project was insipired by a few really excellent resources that deserve special note below.
 * A complete set of sitations will be provided as the project develops (here, and in the notebooks linked above).
 
-**MOOCS**
+**MOOCS** \
 [Machine Learning Model Deployment](https://www.udemy.com/course/deployment-of-machine-learning-models/) \
 [Testing and Monitoring Machine Learning Model Deployments](https://www.udemy.com/course/testing-and-monitoring-machine-learning-model-deployments/) \
 [Feature Engineering for Machine Learning](https://www.udemy.com/course/feature-engineering-for-machine-learning/learn/lecture/24098280#overview) \
 [Feature Selection for Machine Learning](https://www.udemy.com/course/feature-selection-for-machine-learning/learn/lecture/9341694#overview)
-[Docker Mastery: with Kubernetes +Swarm from a Docker Captain](https://www.udemy.com/course/docker-mastery) \
+[Docker Mastery: with Kubernetes +Swarm from a Docker Captain](https://www.udemy.com/course/docker-mastery)
 
-**Tutorials**
-[Full-Stack MERN Application - Javascript Mastery](https://www.youtube.com/playlist?list=PL6QREj8te1P7VSwhrMf3D3Xt4V6_SRkhu) \
+**Tutorials** \
+[Full-Stack MERN Application - Javascript Mastery](https://www.youtube.com/playlist?list=PL6QREj8te1P7VSwhrMf3D3Xt4V6_SRkhu)
 
-**Other Web Content**
+**Other Web Content** \
 [ML-Ops.org - A Introduction to MLOps](https://ml-ops.org/) \
 [Continuous Development for Machine Learing Systems](https://martinfowler.com/articles/cd4ml.html) \
-[Hidden Technical Debt in Machine Learning Systems - NeurIPS2015](https://papers.nips.cc/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf) \
+[Hidden Technical Debt in Machine Learning Systems - NeurIPS2015](https://papers.nips.cc/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf)
