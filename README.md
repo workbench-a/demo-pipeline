@@ -35,11 +35,31 @@
 
 * You need to have pyenv installed locally to build the dev environment.
   * Ubuntu Linux (or similar):
-    * ```sudo bash setup_dev_env.sh```
+    * ```sudo bash setup_env.sh```
 * You can then execute ```pipenv shell``` from the root directory to run the global development environment.
 * To Do: 
   * Pipfiles need to be updated to specify the range of appropriate versions for each package.
 * Misc Commands:
   * To remove uninstall environment: ```pipenv --rm```
   * To exit virtual environment: ```exit```
-  * 
+
+## Citations
+
+**Special Notes:**
+
+* This project was insipired by a few really excellent resources that deserve special note below.
+* A complete set of sitations will be provided as the project develops (here, and in the notebooks linked above).
+
+**MOOCS**
+[Machine Learning Model Deployment](https://www.udemy.com/course/deployment-of-machine-learning-models/)
+[Testing and Monitoring Machine Learning Model Deployments](https://www.udemy.com/course/testing-and-monitoring-machine-learning-model-deployments/)
+[Feature Engineering for Machine Learning](https://www.udemy.com/course/feature-engineering-for-machine-learning/learn/lecture/24098280#overview)
+[Docker Mastery: with Kubernetes +Swarm from a Docker Captain](https://www.udemy.com/course/docker-mastery)
+
+**Tutorials**
+[Full-Stack MERN Application - Javascript Mastery](https://www.youtube.com/playlist?list=PL6QREj8te1P7VSwhrMf3D3Xt4V6_SRkhu)
+
+**Other Web Content**
+[ML-Ops.org - A Introduction to MLOps](https://ml-ops.org/)
+[Continuous Development for Machine Learing Systems](https://martinfowler.com/articles/cd4ml.html)
+[Hidden Technical Debt in Machine Learning Systems - NeurIPS2015](https://papers.nips.cc/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf)
