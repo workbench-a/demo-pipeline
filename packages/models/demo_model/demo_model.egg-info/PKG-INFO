@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: demo-model
+Version: 0.1.0
+Summary: Demo model.
+Home-page: https://github.com/workbench-a/mlops-demo
+Author: workbench-a
+Author-email: NA@NA.com
+License: MIT
+Description: Demo model.
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8.5
+Description-Content-Type: text/markdown
