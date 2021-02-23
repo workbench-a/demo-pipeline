@@ -3,10 +3,14 @@
 ## Developing Machine Learning Models for Practical Web Applications
 
 **Notes:** Given the relatively large scope of the project please consider the following:
-1. This project is under active development
+1. This project is under active development. **The App/API are NOT yet live at the links below. They are being redeployed, and updated asap**
 2. Projects assets will be split over multiple repos, platforms, services, etc. Please see links below.
 
 ## Assets:
+
+### Model Serving API:
+* **Heroku Deployment:** [The public API is hosted here](https://min-flask-api.herokuapp.com/)
+* **AWS Deployment:** Docker deployment via the AWS Elastic Container Registry is in development.
 
 ### Web Application
 * **Client:** [Go here to view it live, and for the latest updates](https://github.com/workbench-a/mern_client_demo)
