@@ -17,6 +17,7 @@ twine = "3.3.0"
 pylint = "2.7.0"
 pdoc3 = "0.9.2"
 build = "0.3.0"
+tox-pipenv = "*"
 
 [requires]
 python_version = "3.8.5"

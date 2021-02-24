@@ -20,5 +20,3 @@ demo_model/processing/features.py
 demo_model/processing/preprocessors.py
 demo_model/processing/transform_target.py
 demo_model/processing/validation.py
-demo_model/tests/__init__.py
-demo_model/tests/test_predict.py

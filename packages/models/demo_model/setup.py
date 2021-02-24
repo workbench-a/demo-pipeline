@@ -9,9 +9,9 @@ from setuptools import find_packages, setup
 
 # Package meta-data.
 NAME = 'demo_model'
-DESCRIPTION = 'Demo model.'
+DESCRIPTION = 'A demo model pipline.'
 URL = 'https://github.com/workbench-a/mlops-demo'
-EMAIL = 'NA@NA.com'
+EMAIL = 'na@na.com'
 AUTHOR = 'workbench-a'
 REQUIRES_PYTHON = '>=3.8.5'
 
@@ -37,6 +37,7 @@ about = {}
 with open(PACKAGE_DIR / 'VERSION') as f:
     _version = f.read().strip()
     about['__version__'] = _version
+    print(f"THE VERSION IS!!!!: {_version}")
 
 setup(
     name=NAME,
@@ -49,6 +50,8 @@ setup(
     python_requires=REQUIRES_PYTHON,
     url=URL,
     packages=find_packages(exclude=('tests',)),
+    # Package data is not being installed correctly. Remove this when resolved.
+    # package_data={'demo_model': ['VERSION'], 'demo_model': ['datasets/*.csv'], 'demo_model': ['datasets/testing/*.csv']},
     package_data={'demo_model': ['VERSION']},
     install_requires=list_reqs(),
     extras_require={},

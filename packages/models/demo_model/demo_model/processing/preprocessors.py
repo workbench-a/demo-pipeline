@@ -3,6 +3,8 @@ import pandas as pd
 from sklearn.base import BaseEstimator, TransformerMixin
 
 class DropUnecessaryFeatures(BaseEstimator, TransformerMixin):
+    """Transformer designed to drop unnecessary features.
+    """
     def __init__(self, variables_to_drop=None):
         self.variables = variables_to_drop
 

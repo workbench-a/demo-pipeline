@@ -3,7 +3,6 @@ from sklearn.base import BaseEstimator, TransformerMixin
 
 class DemoTransformer(BaseEstimator, TransformerMixin):
     """Demo transformer."""
-    
     def __init__(self, variables=None):
         if not isinstance(variables, list):
             self.variables = [variables]
@@ -16,8 +15,7 @@ class DemoTransformer(BaseEstimator, TransformerMixin):
     
     def transform(self, X):
         X = X.copy()
-        
-#         # handle errors
+        # handle errors
         
         # return all but first data point in the array
         for feature in self.variables:

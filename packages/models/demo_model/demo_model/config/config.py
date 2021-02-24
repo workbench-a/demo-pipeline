@@ -6,6 +6,8 @@ PACKAGE_ROOT = pathlib.Path(demo_model.__file__).resolve().parent
 TRAINED_MODEL_DIR = PACKAGE_ROOT / "trained_models"
 DATASET_DIR = PACKAGE_ROOT / "datasets"
 DATASET_TESTING_DIR = PACKAGE_ROOT / "datasets" / "testing"
+
+# Make sure logs are going to this directory or otherwise resolve
 LOGGING_DIR = PACKAGE_ROOT / "logs"
 
 # logs

@@ -1,12 +1,12 @@
 Metadata-Version: 2.1
 Name: demo-model
-Version: 0.1.0
-Summary: Demo model.
+Version: 0.1.5
+Summary: A demo model pipline.
 Home-page: https://github.com/workbench-a/mlops-demo
 Author: workbench-a
-Author-email: NA@NA.com
+Author-email: na@na.com
 License: MIT
-Description: Demo model.
+Description: A demo model pipline.
 Platform: UNKNOWN
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Programming Language :: Python
