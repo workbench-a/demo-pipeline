@@ -1,7 +1,7 @@
 import math
 
 from demo_model.predict import make_prediction
-from demo_model.processing.data_management import load_dataest
+from demo_model.processing.data_management import load_dataset
 
 def test_make_single_prediction():
   # Given
@@ -13,8 +13,8 @@ def test_make_single_prediction():
 
   # Then
   assert subject is not None
-  assert isinstance(subject.get('predictions'))[0], float)
-  assert math.ceil(subject.get('predictions')[0] == 291)
+  assert isinstance(subject.get('predictions')[0], float)
+  assert math.ceil(subject.get('predictions')[0]) == 292
 
   def test_make_multiple_predictions():
     # Given
@@ -27,7 +27,7 @@ def test_make_single_prediction():
 
     # Then
     assert subject is not None
-    assert len(subject.get('predictions')) == 
+    assert len(subject.get('predictions')) == 30
 
     # In this case no rows are filtered
     assert len(subject.get('predictions')) == original_data_length

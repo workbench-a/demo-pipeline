@@ -1,17 +1,17 @@
-import pandas as pd
-import numpy as np
+"""Funcitons for local data management.
+"""
+import typing as t
+import logging
 import os
-# from pathlib import Path
 import joblib
 
+import pandas as pd
+import numpy as np
 from sklearn.pipeline import Pipeline
 from sklearn.model_selection import train_test_split
 from demo_model import pipeline
 from demo_model.config import config
 from demo_model import __version__ as _version
-
-import logging
-import typing as t
 
 _logger = logging.getLogger(__name__)
 
@@ -25,7 +25,7 @@ def create_regression_demo_data(*, mode='production', n_samples=100,
     ## Features, (x1, x2)_{j}, sampled from ~ N(j,10)xN(j,20)
     X = (np.array([[j + 10*(i+1)*np.random.randn() 
                     for i in range(0, 2)] for j in range(0, n_samples)]))
-    
+
     ## Targets, y_j, sampled from ~N(3j+30,1)
     y = np.array([3*j + np.random.randn() + 30 for j in range(0, n_samples)])
 
@@ -36,9 +36,9 @@ def create_regression_demo_data(*, mode='production', n_samples=100,
     data = pd.DataFrame(data=data_dict)
 
     # Specify dataset directory
-    if(mode == 'production'):
+    if mode == 'production':
         dataset_dir = config.DATASET_DIR
-    elif(mode == 'testing'):
+    elif mode == 'testing' :
         dataset_dir = config.DATASET_TESTING_DIR
     else:
         raise ValueError('Value not supported for "mode" in load_dataset.')
@@ -51,9 +51,9 @@ def load_dataset(*, mode='production', file_name: str) -> pd.DataFrame:
     (for testing purposes) and 'production' (for all other data).
     """
     # Choose were you will load the data from
-    if(mode == 'production'):
+    if mode == 'production':
         _data = pd.read_csv(f'{config.DATASET_DIR}/{file_name}')
-    elif(mode == 'testing'):
+    elif mode == 'testing':
         _data = pd.read_csv(f'{config.DATASET_TESTING_DIR}/{file_name}')
     else:
         raise ValueError('Value not supported for "mode" in load_dataset.')

@@ -1,6 +1,5 @@
-import numpy as np
-import pandas as pd
-import typing as t
+"""Tranformations applied to the target variable.
+"""
 
 def half_scale(*, target):
     """Divide target elementwise by two."""

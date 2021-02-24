@@ -1,12 +1,11 @@
+import logging
+
 from sklearn.linear_model import LinearRegression
 from sklearn.pipeline import Pipeline
 from demo_model.processing import features
 from demo_model.processing import preprocessors as pp
 from demo_model.config import config
 
-import logging
-
-# *check logger
 _logger = logging.getLogger(__name__)
 
 reg_demo_pipe = Pipeline(

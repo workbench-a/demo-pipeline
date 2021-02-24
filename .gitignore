@@ -21,3 +21,6 @@ docs/
 *.egg-info/
 dist/
 build/
+
+# log directories
+logs/

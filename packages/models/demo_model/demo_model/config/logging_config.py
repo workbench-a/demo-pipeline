@@ -1,11 +1,8 @@
-from demo_model.config import config
-import logging
+"""Cnfiguration for python logger.
+"""
 import sys
-
-# PSA: Multiple calls to logging.getLogger('someLogger') return a
-# reference to the same logger object.  This is true not only
-# within the same module, but also across modules as long as
-# it is in the same Python interpreter process.
+import logging
+from demo_model.config import config
 
 FORMATTER = logging.Formatter(
     "%(asctime)s — %(name)s — %(levelname)s —" "%(funcName)s:%(lineno)d — %(message)s"
@@ -13,9 +10,9 @@ FORMATTER = logging.Formatter(
 
 def get_console_handler():
     """Setup for logging handler."""
-    if(config.LOG_MODE == "file"):
+    if config.LOG_MODE == "file":
         console_handler = logging.FileHandler(f"{config.LOGGING_DIR}/{config.LOG_FILE}")
-    elif(config.LOG_MODE == "console"):
+    elif config.LOG_MODE == "console":
         console_handler = logging.StreamHandler(sys.stdout)
 
     console_handler.setFormatter(FORMATTER)

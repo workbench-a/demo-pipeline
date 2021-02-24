@@ -1,3 +1,5 @@
+"""Transformers for feature engineering.
+"""
 import numpy as np
 from sklearn.base import BaseEstimator, TransformerMixin
 
@@ -10,10 +12,13 @@ class DemoTransformer(BaseEstimator, TransformerMixin):
             self.variables = variables
 
     def fit(self, X, y=None):
-        # to accomodate the pipeline
+        """Identity function, to accomodate pipeline.
+        """
         return self
     
     def transform(self, X):
+        """Demo transform method, wich scales input by 0.5
+        """
         X = X.copy()
         # handle errors
         

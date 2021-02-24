@@ -1,6 +1,7 @@
+"""Demo-model configurations.
+"""
 import pathlib
 import demo_model
-import pandas as pd
 
 PACKAGE_ROOT = pathlib.Path(demo_model.__file__).resolve().parent
 TRAINED_MODEL_DIR = PACKAGE_ROOT / "trained_models"
@@ -12,7 +13,7 @@ LOGGING_DIR = PACKAGE_ROOT / "logs"
 
 # logs
 LOG_FILE = "logs.txt"
-LOG_MODE = "console" # "file" or "console"
+LOG_MODE = "file" # "file" or "console"
 
 # data
 DATA_FILE = "data.csv"
