@@ -27,6 +27,12 @@
 ### Data Science:
  * **Real-time monitoring of fashion trends:** [View the notebook](https://colab.research.google.com/drive/1k0ulpOzYYIxmu2NHuUAzJAP_8jheuDS5?usp=sharing)
 
+## Documentation:
+* To generate documentation for the desired package simple execute: ```pdoc --html --output-dir doc_build_dir package_name```
+
+### Models:
+demo-model: [Live here!](https://app.netlify.com/sites/distracted-kare-e72e69/overview)
+api: In development
 
 # Running the project:
 ---
@@ -51,7 +57,7 @@
 * A complete set of sitations will be provided as the project develops (here, and in the notebooks linked above).
 
 **MOOCS** \
-[Machine Learning Model Deployment](https://www.udemy.com/course/deployment-of-machine-learning-models/) \
+[Machine Learning Model Deployment](https://www.udemy.com/course/deployment-of-machine-learning-models/) - The original inspiration and template for this project!\
 [Testing and Monitoring Machine Learning Model Deployments](https://www.udemy.com/course/testing-and-monitoring-machine-learning-model-deployments/) \
 [Feature Engineering for Machine Learning](https://www.udemy.com/course/feature-engineering-for-machine-learning/learn/lecture/24098280#overview) \
 [Feature Selection for Machine Learning](https://www.udemy.com/course/feature-selection-for-machine-learning/learn/lecture/9341694#overview)
