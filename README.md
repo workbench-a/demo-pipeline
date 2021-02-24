@@ -2,30 +2,29 @@
 
 ## Developing Machine Learning Models for Practical Web Applications
 
-**Notes:** Given the relatively large scope of the project please consider the following:
-1. This project is under active development. **The App/API are NOT yet live at the links below. They are being redeployed, and updated asap**
-2. Projects assets will be split over multiple repos, platforms, services, etc. Please see links below.
+**Notes:** The MLOps demo is a collection of case-studies, web applications, models, pipelines, apis, and more illustrating the deployment, testing, and monitoring of machine learning models. The goal is to demonstrate the entire machine learning lifecycle in a variety of contexts both practical and theoretical. 
 
-## Assets:
+1. This project is under active development. **The App/API are NOT yet live at the links below. They are being redeployed, and updated asap.**
+2. Projects assets are split over multiple repos.
+
+## Projects:
+
+### **Real-Time Monitoring of Fashion Trends** 
+
+### Business / MLOps Case-Study:
+* A guide to the machine learning development lifecycle presented in the context of a business case-study. [notebook!](https://colab.research.google.com/drive/1Tq7Wf_JGjs_LDlg41U3sppRzLBQ0MKlD?usp=sharing) 
 
 ### Model Serving API:
-* **Heroku Deployment:** [The public API is hosted here](https://min-flask-api.herokuapp.com/)
+* **Heroku Deployment:** [The public API is hosted here!](https://min-flask-api.herokuapp.com/)
 * **AWS Deployment:** Docker deployment via the AWS Elastic Container Registry is in development.
 
 ### Web Application
 * **Client:** [Go here to view it live, and for the latest updates](https://github.com/workbench-a/mern_client_demo)
 * **Server:** [Go here to view it live, and for the latest updates](https://github.com/workbench-a/mern_server_demo)
 
-### Business Case-Studies:
-* **Fashion Trends:** Real-Time Monitoring and Forecasting
- * Problem and Opportunity (Under Contruction)
-
-### MLOps: A Guide to the Machine Learning Development LifeCycle
- * Presented as a case-study for real-time Monitoring of fashion trends
-
 
 ### Data Science:
- * **Real-time monitoring of fashion trends:** [View the notebook](https://colab.research.google.com/drive/1k0ulpOzYYIxmu2NHuUAzJAP_8jheuDS5?usp=sharing)
+ * Analysis for the project: [View the notebook!](https://colab.research.google.com/drive/1k0ulpOzYYIxmu2NHuUAzJAP_8jheuDS5?usp=sharing)
 
 ## Documentation:
 * To generate documentation for the desired package simple execute:  
@@ -34,9 +33,9 @@
 ### Package Docs:
 * demo-model: [Live here!](https://app.netlify.com/sites/distracted-kare-e72e69/overview)
 * api: In development
+* text classifier: In development
 
 # Running the project:
----
 
 ## Complete Workflow Documentation:
   * Notes to help navigate the project: [here!](https://colab.research.google.com/drive/1fuVfAoYDDcNSTcczp8EQPE7cG_AA_H9t?usp=sharing)
