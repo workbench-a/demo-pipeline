@@ -6,9 +6,9 @@ app = Blueprint('app', __name__)
 @app.route("/health", methods=['GET'])
 def health():
   """"""
-  return get_health()
+   return get_health()
 
 @app.route('/version', methods=['GET'])
 def version():
   """"""
-  return get_version(request)
+    return get_version(request)

@@ -9,19 +9,19 @@ from demo_model import __version__ as _version
 
 def get_health():
   """"""
-  return '<h1>ML Health Status: ok<h1>'
+    return '<h1>ML Health Status: ok<h1>'
 
 def get_version(request):
   """"""
-  if request.method == 'GET':
-    return jsonify({'model_version': _version,
-                    'api_version': api_version})
+    if request.method == 'GET':
+        return jsonify({'model_version': _version, 
+        'api_version': api_version})
 
 def classify_text(request):
   """"""
-  if request.method == 'POST':
-      # Do stuff
-      return jsonify({'a_data_point': 'a_sentiment'})
+    if request.method == 'POST':
+          # Do stuff
+          return jsonify({'a_data_point': 'a_sentiment'})
 
 def predict():
     if request.method == 'GET':
@@ -35,15 +35,15 @@ def predict():
         version = result.get('version')
         errors = ''
         # Step 5: Return all results as JSON
-        return jsonify({'predictions': predictions,
-                        'version': version,
-                        'errors': errors})
+    return jsonify({'predictions': predictions,
+                    'version': version,
+                    'errors': errors})
     elif request.method == 'POST':
-      return '<h1>POST prediction endpoint</h1>'
+        return '<h1>POST prediction endpoint</h1>'
         # # Step 1: Extract POST data from request body as JSON
         # if 'file' not in request.files:
         #   return jsonifyI('File not found'), 400
-        
+
         # file = request.files['file']
 
 
@@ -72,4 +72,4 @@ def predict():
         # return jsonify(
         #     {'readable_predictions': readable_predictions[0],
         #      'version': version})
-                  
+                

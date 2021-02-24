@@ -1,6 +1,23 @@
+# from the python interpreter
 *.pyc
 *.pyo
+
+# sandbox
+*sandbox/
+
+# external scripts
+scripts/
+
+# environement variables
 *.env
-sandbox/
-api_sandbox/
-data_sandbox/
+
+# tox
+.tox/
+
+# documentation
+docs/
+
+# automatically generated from package build
+*.egg-info/
+dist/
+build/

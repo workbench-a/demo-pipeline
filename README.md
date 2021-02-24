@@ -22,32 +22,31 @@
 
 ### MLOps: A Guide to the Machine Learning Development LifeCycle
  * Presented as a case-study for real-time Monitoring of fashion trends
- * **Ancillary (Project / Workflow Related) Documentation:** [here](https://colab.research.google.com/drive/1fuVfAoYDDcNSTcczp8EQPE7cG_AA_H9t?usp=sharing)
+
 
 ### Data Science:
  * **Real-time monitoring of fashion trends:** [View the notebook](https://colab.research.google.com/drive/1k0ulpOzYYIxmu2NHuUAzJAP_8jheuDS5?usp=sharing)
 
 ## Documentation:
-* To generate documentation for the desired package simple execute: ```pdoc --html --output-dir doc_build_dir package_name```
+* To generate documentation for the desired package simple execute:  
+  * ```pdoc --html --output-dir doc_build_dir package_name```
 
-### Models:
-demo-model: [Live here!](https://app.netlify.com/sites/distracted-kare-e72e69/overview)
-api: In development
+### Package Docs:
+* demo-model: [Live here!](https://app.netlify.com/sites/distracted-kare-e72e69/overview)
+* api: In development
 
 # Running the project:
 ---
 
-## Dev Environment:
+## Complete Workflow Documentation:
+  * Notes to help navigate the project: [here!](https://colab.research.google.com/drive/1fuVfAoYDDcNSTcczp8EQPE7cG_AA_H9t?usp=sharing)
+
+## Dev Environment Quickstart Guide:
 
 * You need to have pyenv installed locally to build the dev environment.
   * Ubuntu Linux (or similar):
     * ```sudo bash setup_env.sh```
 * You can then execute ```pipenv shell``` from the root directory to run the global development environment.
-* To Do: 
-  * Pipfiles need to be updated to specify the range of appropriate versions for each package.
-* Misc Commands:
-  * To remove uninstall environment: ```pipenv --rm```
-  * To exit virtual environment: ```exit```
 
 ## Citations
 
@@ -56,17 +55,17 @@ api: In development
 * This project was insipired by a few really excellent resources that deserve special note below.
 * A complete set of sitations will be provided as the project develops (here, and in the notebooks linked above).
 
-**MOOCS** \
-[Machine Learning Model Deployment](https://www.udemy.com/course/deployment-of-machine-learning-models/) - The original inspiration and template for this project!\
-[Testing and Monitoring Machine Learning Model Deployments](https://www.udemy.com/course/testing-and-monitoring-machine-learning-model-deployments/) \
-[Feature Engineering for Machine Learning](https://www.udemy.com/course/feature-engineering-for-machine-learning/learn/lecture/24098280#overview) \
-[Feature Selection for Machine Learning](https://www.udemy.com/course/feature-selection-for-machine-learning/learn/lecture/9341694#overview)
-[Docker Mastery: with Kubernetes +Swarm from a Docker Captain](https://www.udemy.com/course/docker-mastery)
+**MOOCS**
+* [Machine Learning Model Deployment](https://www.udemy.com/course/deployment-of-machine-learning-models/) - The original inspiration and template for this project!
+* [Testing and Monitoring Machine Learning Model Deployments](https://www.udemy.com/course/testing-and-monitoring-machine-learning-model-deployments/)
+* [Feature Engineering for Machine Learning](https://www.udemy.com/course/feature-engineering-for-machine-learning/learn/lecture/24098280#overview) \
+* [Feature Selection for Machine Learning](https://www.udemy.com/course/feature-selection-for-machine-learning/learn/lecture/9341694#overview)
+* [Docker Mastery: with Kubernetes +Swarm from a Docker Captain](https://www.udemy.com/course/docker-mastery)
 
-**Tutorials** \
-[Full-Stack MERN Application - Javascript Mastery](https://www.youtube.com/playlist?list=PL6QREj8te1P7VSwhrMf3D3Xt4V6_SRkhu)
+**Tutorials**
+* [Full-Stack MERN Application - Javascript Mastery](https://www.youtube.com/playlist?list=PL6QREj8te1P7VSwhrMf3D3Xt4V6_SRkhu)
 
-**Other Web Content** \
-[ML-Ops.org - A Introduction to MLOps](https://ml-ops.org/) \
-[Continuous Development for Machine Learing Systems](https://martinfowler.com/articles/cd4ml.html) \
-[Hidden Technical Debt in Machine Learning Systems - NeurIPS2015](https://papers.nips.cc/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf)
+**Other Web Content**
+* [ML-Ops.org - A Introduction to MLOps](https://ml-ops.org/)
+* [Continuous Development for Machine Learing Systems](https://martinfowler.com/articles/cd4ml.html)
+* [Hidden Technical Debt in Machine Learning Systems - NeurIPS2015](https://papers.nips.cc/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf)

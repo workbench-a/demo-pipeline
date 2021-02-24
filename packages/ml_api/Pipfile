@@ -3,6 +3,11 @@ name = "pypi"
 url = "https://pypi.org/simple"
 verify_ssl = true
 
+[[source]]
+name = "testpypi"
+url = "https://test.pypi.org/simple"
+verify_ssl = true
+
 [packages]
 numpy = ">=1.18.1,<1.19.0"
 pandas = ">=0.25.3,<0.26.0"
@@ -13,8 +18,6 @@ kaggle = "<1.6.0,>=1.5.6"
 matplotlib = "*"
 seaborn = "*"
 tox = "*"
-jupyterlab = "*"
-twine = "*"
 gunicorn = "*"
 flask = "*"
 marshmallow="*"
@@ -24,6 +27,11 @@ pylint = "*"
 pdoc3 = "*"
 flask-marshmallow = "*"
 marshmallow-sqlalchemy = "*"
+demo-model = { version="0.1.4", index="testpypi" }
+emoji = "*"
+gensim = "*"
+nltk = "*"
+tox-pipenv = "*"
 
 [requires]
 python_version = "3.8.5"

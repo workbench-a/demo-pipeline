@@ -4,9 +4,9 @@ from api import __version__ as api_version
 
 def get_health():
   """"""
-  return '<h1> Health Status: ok<h1>'
+    return '<h1> Health Status: ok<h1>'
 
 def get_version(request):
   """"""
-  if request.method == 'GET':
-    return jsonify({'api_version': api_version})
+    if request.method == 'GET':
+       return jsonify({'api_version': api_version})
